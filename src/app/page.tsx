@@ -179,7 +179,7 @@ export default function Page() {
                 <button
                   key={t.id}
                   role="tab"
-                  ref={(el) => (tabRefs.current[i] = el)}
+                  ref={(el) => { tabRefs.current[i] = el; }}
                   id={`tab-${t.id}`}
                   aria-selected={selected}
                   aria-controls={`panel-${t.id}`}
